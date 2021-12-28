@@ -1,9 +1,9 @@
 const { spawnSync } = require("child_process");
 
-spawnSync("sudo", ["docker-compose", "build"], {
+spawnSync("yarn", ["react-scripts", "build"], {
   stdio: "inherit",
 });
 
-spawnSync("sudo", ["docker-compose", "up"], {
+spawnSync("yarn", ["serve", "./build"], {
   stdio: "inherit",
 });
