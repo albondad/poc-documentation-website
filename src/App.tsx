@@ -1,4 +1,5 @@
 // npm modules
+import React from 'react';
 import './App.css';
 import {
   Box,
@@ -31,7 +32,7 @@ function App() {
   return (
     <Box
       sx={{
-        backgroundColor: grey['A200'],
+        backgroundColor: grey.A200,
         display: 'flex',
         alignItems: 'start',
         justifyContent: 'center',
@@ -42,7 +43,7 @@ function App() {
     >
       <Box
         sx={{
-          backgroundColor: grey['A100'],
+          backgroundColor: grey.A100,
           borderRadius: 1,
           boxShadow: 1,
           width: '100%',
@@ -54,11 +55,9 @@ function App() {
         }}
       >
         {/* header */}
-        <Typography
-          children="Documentation Previews"
-          variant="h5"
-          sx={{ fontWeight: 700, pl: 4, pr: 4 }}
-        />
+        <Typography variant="h5" sx={{ fontWeight: 700, pl: 4, pr: 4 }}>
+          Documentation Previews
+        </Typography>
 
         {/* list */}
         <List>
@@ -66,7 +65,7 @@ function App() {
           <ListItem divider>
             <ListItemButton onClick={handleStoplightListItemButtonClick}>
               <ListItemText>
-                <Typography children="Stoplight" variant="h6" />
+                <Typography variant="h6">Stoplight</Typography>
               </ListItemText>
               <ListItemIcon sx={{ justifyContent: 'right' }}>
                 <ChevronRightIcon />
@@ -78,7 +77,7 @@ function App() {
           <ListItem divider>
             <ListItemButton onClick={handleRedoclyListItemButtonClick}>
               <ListItemText>
-                <Typography children="Redocly" variant="h6" />
+                <Typography variant="h6">Redocly</Typography>
               </ListItemText>
               <ListItemIcon sx={{ justifyContent: 'right' }}>
                 <ChevronRightIcon />
@@ -91,7 +90,7 @@ function App() {
         <ListItem>
           <ListItemButton onClick={handlePostmanListItemButtonClick}>
             <ListItemText>
-              <Typography children="Postman" variant="h6" />
+              <Typography variant="h6">Postman</Typography>
             </ListItemText>
             <ListItemIcon sx={{ justifyContent: 'right' }}>
               <ChevronRightIcon />
