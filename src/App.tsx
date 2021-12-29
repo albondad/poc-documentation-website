@@ -31,7 +31,7 @@ function App() {
   return (
     <Box
       sx={{
-        backgroundColor: color.grey.A200,
+        backgroundColor: colors.grey.A200,
         display: 'flex',
         alignItems: 'start',
         justifyContent: 'center',
@@ -42,7 +42,7 @@ function App() {
     >
       <Box
         sx={{
-          backgroundColor: color.grey.A100,
+          backgroundColor: colors.grey.A100,
           borderRadius: 1,
           boxShadow: 1,
           width: '100%',
