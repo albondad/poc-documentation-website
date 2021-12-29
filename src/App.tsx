@@ -1,6 +1,7 @@
 // npm modules
 import React from 'react';
 import {
+  color,
   Box,
   List,
   ListItem,
@@ -10,7 +11,6 @@ import {
   Typography,
 } from '@mui/material';
 import { ChevronRight as ChevronRightIcon } from '@mui/icons-material';
-import { grey } from '@mui/material/colors';
 
 // component
 function App() {
@@ -31,7 +31,7 @@ function App() {
   return (
     <Box
       sx={{
-        backgroundColor: grey.A200,
+        backgroundColor: color.grey.A200,
         display: 'flex',
         alignItems: 'start',
         justifyContent: 'center',
@@ -42,7 +42,7 @@ function App() {
     >
       <Box
         sx={{
-          backgroundColor: grey.A100,
+          backgroundColor: color.grey.A100,
           borderRadius: 1,
           boxShadow: 1,
           width: '100%',
