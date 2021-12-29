@@ -1,6 +1,5 @@
 // npm modules
 import React from 'react';
-import './App.css';
 import {
   Box,
   List,
