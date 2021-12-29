@@ -1,7 +1,7 @@
 // npm modules
 import React from 'react';
 import {
-  color,
+  colors,
   Box,
   List,
   ListItem,
